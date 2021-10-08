@@ -4,7 +4,7 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 export function SkillCard({ skill }){
 	return (
 		<TouchableOpacity style={styles.buttonSkill}>
-			<Text style={styles.textSkill}>{skill}</Text>
+			<Text style={styles.textSkill} numberOfLines={1}>{skill}</Text>
 		</TouchableOpacity>
 	);
 }
@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
 		borderRadius: 50
 	},
 	textSkill: {
-		
 		color: '#FFF',
 		fontSize: 20,
 		fontWeight: 'bold',
+		textAlign: 'center',
 	}
 });
