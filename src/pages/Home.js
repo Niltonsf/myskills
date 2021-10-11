@@ -25,7 +25,7 @@ export function Home() {
 			
 			<TextInput 
 				style={styles.input}
-				placeholder="New Skill"
+				placeholder="New Skill" 
 				placeholderTextColor='#555'
 				onChangeText={setNewSkill}
 			/>
